@@ -1,0 +1,34 @@
+\documentclass[temp2.tex]{subfiles}
+ 
+\begin{document}
+\chapter{two}
+\textbf{Hello world!}
+
+Hello, here is some text without a meaning.  This... 
+
+
+\begin{table}[H]
+    \centering
+     \begin{tabular}{||c c c c||} 
+             \hline
+             Noise level & $ Avg. \boldsymbol{NCor(P^{true},P^{init})}$  &   $Avg. \boldsymbol{NCor(P^{true},P^{init})}$ & Convergence Iteration \\ [0.5ex] 
+             \hline\hline
+             0\% & 0.992866  & 0.995287 & 13 \\
+            \hline
+            10\% & 0.992235  & 0.995002 & 13 \\
+            \hline
+            30\% &0.988352  & 0.993723 & 11  \\
+            \hline
+            50\% &0.981935  & 0.992033 & 19 \\ 
+            \hline
+            80\% &0.968330  & 0.988639 & 12 \\
+            \hline
+            100\% &0.906425  & 0.941335 & 18 \\ [1ex]
+            \hline
+    \end{tabular}
+    \caption{EMD-4138: 2D normalized correlation of estimated projections using 500 projections with true projections }
+    \label{tbl:our_arp_4138_result-3d-correlation}
+\end{table}
+
+
+\end{document}
