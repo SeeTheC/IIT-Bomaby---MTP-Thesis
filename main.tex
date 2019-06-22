@@ -1019,7 +1019,6 @@ Three types of Particle-Picker are created using SVM, Random Forest and Faster-R
 
 Deciding which model is best just by one parameter will not be right, its a mixture of accuracy, precision, translation error and detection time. An ideal model should have very high accuracy and precision on the other hand very low translation error and detection time. Currently, if these datasets are considered and these models (SVM, Random Forest and Faster-RCNN) then, Faster-RCNN is doing very well because in terms of accuracy and detection it is better other two. Precision parameter is not considered as markings are incomplete. And for translation error, approximately 15 pixel difference is there between Faster-RCNN and other two (SVM and Random Forest) which is not very large. But Random Forest is better than Faster R-CNN w.r.t marking errors and translation errors. Because Faster R-CNN has marked many particles which are not actually a particle (in visual sense), also it has very large translation error. Quantitatively which model is better can only be tell when ground truth for all the particles are known. 
 
-
 \chapter{3D Reconstruction}
 The reason for doing particle picking is to 3D reconstruct the molecule using those markings. After the particle picking and before 3D reconstruction, there are few more steps involved such as Clustering, CTF correction, etc. (see section \ref{sec: basic_pipeline}). 3D reconstruction is a challenging job because the angles of the projections are unknown. Without knowing the angles as well as shifts of projections, correct reconstruction is near to impossible. Tools like RELION uses the Bayesian \cite{scheres2012relion} approach for solving this problem and optimize the equation in alternating fashion i.e., finding the rough angles and then performing the back-projection (reconstruct the object). After that perform the forward projection at those angles for calculating the error and this process is repeated. \\
 
@@ -1935,6 +1934,7 @@ All the experiments are performed on simulated projections but not on the real p
 
 \bibliographystyle{plain}
 \bibliography{ref}
+
 \end{document}
 
 

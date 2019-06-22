@@ -1,0 +1,12 @@
+%============================= abs.tex================================
+\begin{Abstract}
+Cryogenic Electron Microscopy (Cryo-EM) is a special type of transmission electron microscopy (TEM) which is used for getting projections (tomographic projections) for very tiny biological samples like bacteria, proteins, etc. in cryogenic environments. Then, these projections are used for deriving the 3D internal structure of particles. But output from cryo-em is a very large 2D image (also called as micrograph) having lots of projection. So, before going for 3D reconstruction,  projections are to be marked out manually or automatically for reconstruction. Marking of particles is called as \textit{particle picking}.\\
+
+Micrograph contains thousands of projections, so marking manually is a very time-consuming process. Also, 3D reconstruction requires projections to be aligned on their center for robust reconstruction. Thus, marking thousands of particles manually with very high precision is very time-consuming.  Because of that, there is a need for a robust automatic algorithm which can mark particles and with high precision.\\
+
+Marked particles are clustered first for removing the noise. Then, these projections are used for 3D reconstruction. But,  as angles and shifts for projections are unknown, so reconstruction is not possible directly. Firstly angles and shifts estimation is performed, and then reconstruction is carried out.  So, the objective is to develop the best algorithms for particle picking, angles, and shifts estimations.
+
+
+\end{Abstract}
+%=======================================================================
+
